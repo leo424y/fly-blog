@@ -23,15 +23,15 @@ module.exports = {
         url: 'https://www.notion.so/flyis/dc3243b497de424ab8a8221dbcc50f02?v=266ab4913d9b425ea5a8d0d96b1b9351', // notion中文章表的链接
         // 建议开启，可以大大提高build速度
         // 访问 https://github.com/settings/tokens 获取token 
-        // export GitHubToken='yourtokenhere'
-        openGithubCache: false, // 开启此配置后，notion页面的数据会缓存到github仓库。需要在环境变量中配置 GitHubToken
+        export GitHubToken='0a44f28450b7430bc30fac9bf9a1f9e4ad05b489'
+        openGithubCache: true, // 开启此配置后，notion页面的数据会缓存到github仓库。需要在环境变量中配置 GitHubToken
         github: {
             username: 'leo424y', // github 用户名
-            repo: 'fly-blog', // 作为blog缓存数据仓库的名称
+            repo: 'fly-blog-cache', // 作为blog缓存数据仓库的名称
             branch: 'master' // 作为blog缓存数据仓库的分支
         },
         search: {
-            open: false,
+            open: true,
             url: '/.netlify/functions/search'
         }
     },
